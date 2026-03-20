@@ -1,5 +1,5 @@
 {
-  "name": "app mvp",
+  "name": "Nebula",
   "description": "A galaxy-themed voice journal that transcribes your thoughts locally using the Web Speech API.",
   "requestFramePermissions": ["microphone"]
 }

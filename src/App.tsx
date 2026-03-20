@@ -75,7 +75,7 @@ const StarBackground = () => {
 };
 
 // --- IndexedDB Helper ---
-const DB_NAME = 'AppMvpDB';
+const DB_NAME = 'NebulaDB';
 const STORE_NAME = 'audio_blobs';
 
 const initDB = (): Promise<IDBDatabase> => {
@@ -351,7 +351,7 @@ export default function App() {
               </button>
             )}
             <h1 className="text-2xl font-bold tracking-tight">
-              {view === 'main' ? '' : view === 'recordings' ? 'Recordings' : view === 'nebula' ? 'APP MVP' : 'APP MVP Fragment'}
+              {view === 'main' ? '' : view === 'recordings' ? 'Recordings' : view === 'nebula' ? 'Nebula' : 'Nebula Fragment'}
             </h1>
           </div>
         </header>
@@ -430,7 +430,7 @@ export default function App() {
                     <div className="p-4 rounded-full bg-white/5 group-hover:bg-white/10 transition-colors">
                       <Sparkles size={24} className="text-white/60 group-hover:text-white" />
                     </div>
-                    <span className="text-[10px] font-bold tracking-widest uppercase opacity-40 group-hover:opacity-100 transition-opacity">APP MVP</span>
+                    <span className="text-[10px] font-bold tracking-widest uppercase opacity-40 group-hover:opacity-100 transition-opacity">NEBULA</span>
                   </button>
                 </div>
               </motion.div>
@@ -549,7 +549,7 @@ export default function App() {
                 <div className="bg-cyan-500/10 border border-cyan-500/20 rounded-xl p-4 mb-8 flex gap-4 items-start shrink-0">
                   <Info className="text-cyan-400 shrink-0 mt-1" size={20} />
                   <div className="space-y-1">
-                    <h3 className="text-[10px] font-bold tracking-widest uppercase text-cyan-400">APP MVP SYSTEM v0.1</h3>
+                    <h3 className="text-[10px] font-bold tracking-widest uppercase text-cyan-400">NEBULA SYSTEM v0.1</h3>
                     <p className="text-sm text-white/60 leading-relaxed">
                       Each point represents a memory. Click a node to view its transcript.
                     </p>
@@ -565,7 +565,7 @@ export default function App() {
                       onClick={() => setView('fragment')}
                       id="sample-nebula-dot"
                     />
-                    <span className="text-[10px] font-bold tracking-[0.3em] uppercase text-cyan-400">SAMPLE APP MVP</span>
+                    <span className="text-[10px] font-bold tracking-[0.3em] uppercase text-cyan-400">SAMPLE NEBULA</span>
                   </div>
 
                   {/* Real Memory Dots */}
@@ -632,7 +632,7 @@ export default function App() {
                         {selectedRecording ? (
                           <>
                             <div className="w-4 h-4 rounded-full bg-cyan-400 shadow-[0_0_15px_rgba(34,211,238,0.6)]" />
-                            <h2 className="text-2xl font-bold tracking-tight">APP MVP Fragment</h2>
+                            <h2 className="text-2xl font-bold tracking-tight">Nebula Fragment</h2>
                           </>
                         ) : (
                           <>
